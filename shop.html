@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Organic Food Store</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Shop Organic Food</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="cart.html">Checkout</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search products...">
+        </div>
+    </header>
+
+    <main>
+        <section class="sidebar">
+            <h2>Filters</h2>
+            <form>
+                <div class="filter-group">
+                    <label for="categories">Categories</label>
+                    <select id="categories">
+                        <option value="all">All</option>
+                        <option value="fruits">Fruits</option>
+                        <option value="vegetables">Vegetables</option>
+                        <option value="dairy">Dairy</option>
+                        <option value="grains">Grains</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="price-range">Price Range</label>
+                    <input type="range" id="price-range" min="0" max="100" step="5">
+                    <span id="price-value">50 - 2000</span>
+                </div>
+
+                <div class="filter-group">
+                    <label for="organic-cert">Organic Certification</label>
+                    <input type="checkbox" id="organic-cert"> Certified Organic
+                </div>
+
+                <div class="filter-group">
+                    <label for="dietary">Dietary Restrictions</label>
+                    <select id="dietary">
+                        <option value="none">None</option>
+                        <option value="vegan">Vegan</option>
+                        <option value="gluten-free">Gluten-Free</option>
+                        <option value="nut-free">Nut-Free</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="filter-btn">Apply Filters</button>
+            </form>
+        </section>
+
+        <section class="product-grid">
+            <article class="product-card">
+                <img src="shop/apples.jpg" alt="Organic Apples">
+                <h3>Organic Apples</h3>
+                <p class="price">300Tk</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </article>
+
+            <article class="product-card">
+                <img src="shop/broccoli.jpg" alt="Organic Broccoli">
+                <h3>Organic Broccoli</h3>
+                <p class="price">99Tk</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </article>
+
+            <article class="product-card">
+                <img src="shop/ghee.jpg" alt="Organic Ghee">
+                <h3>Organic Ghee</h3>
+                <p class="price">599Tk</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </article>
+
+            <article class="product-card">
+                <img src="shop/chiaseeds.jpg" alt="Organic Chia Seeds">
+                <h3>Organic Chia Seeds</h3>
+                <p class="price">455Tk</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </article>
+
+            <article class="product-card">
+                <img src="feat-product/honey.jpg" alt="Organic Honey">
+                <h3>Organic Honey</h3>
+                <p class="price">789Tk</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </article>
+        </section>
+        <section class="product-list-simple">
+            <h2>Product List</h2>
+            <ul>
+                <li>Organic Almonds - 950Tk</li>
+                <li>Organic Olive Oil - 1200Tk</li>
+                <li>Organic Spinach - 70Tk</li>
+                <li>Organic Coconut Milk - 150Tk</li>
+                <li>Organic Basmati Rice - 800Tk</li>
+                <li>Organic Turmeric Powder - 250Tk</li>
+                <li>Organic Carrots - 85Tk</li>
+                <li>Organic Strawberries - 450Tk</li>
+                <li>Organic Brown Rice - 600Tk</li>
+                <li>Organic Chickpeas - 200Tk</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Organic Food Store. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
